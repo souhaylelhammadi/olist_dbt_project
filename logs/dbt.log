@@ -1,0 +1,34 @@
+[0m21:44:17.614579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d39c440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8f2fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8f2e90>]}
+
+
+============================== 21:44:17.619216 | 1549cd1b-a060-44eb-81ec-6e4174d43711 ==============================
+[0m21:44:17.619216 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:44:17.619764 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'static_parser': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt init olist_dbt', 'version_check': 'True', 'log_path': 'logs', 'target_path': 'None', 'write_json': 'True', 'introspect': 'True', 'use_colors': 'True', 'profiles_dir': '/Users/souhaylelhammadi/.dbt', 'log_format': 'default', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'printer_width': '80', 'log_cache_events': 'False', 'hints_enabled': 'True', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'debug': 'False'}
+[0m21:44:17.703357 [info ] [MainThread]: Creating dbt configuration folder at /Users/souhaylelhammadi/.dbt
+[0m21:44:17.704771 [debug] [MainThread]: Starter project path: /Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m21:44:17.710956 [info ] [MainThread]: Setting up your profile.
+[0m21:45:25.732225 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+list index out of range
+[0m21:45:25.739950 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/cli/requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/cli/main.py", line 503, in init
+    results = task.run()
+  File "/Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/task/init.py", line 360, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/Users/souhaylelhammadi/Desktop/projects/BI_e_commetce/venv/lib/python3.14/site-packages/dbt/task/init.py", line 245, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m21:45:25.762393 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 68.23147, "process_in_blocks": "0", "process_kernel_time": 0.30305, "process_mem_max_rss": "128450560", "process_out_blocks": "0", "process_user_time": 1.327503}
+[0m21:45:25.763987 [debug] [MainThread]: Command `dbt init` failed at 21:45:25.763599 after 68.23 seconds
+[0m21:45:25.766511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9c8c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e7439b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9dd370>]}
+[0m21:45:25.767858 [debug] [MainThread]: Flushing usage events
+[0m21:45:26.442346 [debug] [MainThread]: An error was encountered while trying to flush usage events
