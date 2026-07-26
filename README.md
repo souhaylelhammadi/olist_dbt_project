@@ -62,6 +62,8 @@ dbt run
 #    - sql analysis/sql analysis.sql : requêtes métier sur dev.fact_orders, dev.dim_*, ...
 #    - power bi/olist dashboard.pbix : dashboard
 ```
+<img width="961" height="698" alt="Capture d’écran 2026-07-26 à 20 56 50" src="https://github.com/user-attachments/assets/d6536931-ec46-4865-872d-5fa637c0758d" />
+<img width="964" height="720" alt="Capture d’écran 2026-07-26 à 20 57 10" src="https://github.com/user-attachments/assets/2ad00eb7-2d6f-4984-be7a-4e1cd7ee3d0a" />
 
 ## Questions métier couvertes (`sql analysis/`)
 
