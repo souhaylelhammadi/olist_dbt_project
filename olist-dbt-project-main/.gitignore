@@ -1,0 +1,13 @@
+# Python
+dbt-env/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Top-level logs folder
+logs/
+
+# Data (optional)
+data/
